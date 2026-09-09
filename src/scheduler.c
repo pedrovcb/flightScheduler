@@ -67,6 +67,18 @@ int executaSimulacao(const char *algoritmo, const Tarefa *tarefas, EstadoTarefa 
                 estados[tarefaAtual].ativa = 0;
                 segmentos[segAtual].motivo = 'F';
             }
+        } else {
+            //mudança: acumula tempo idle quando nao tem tarefa pronta
+            if(segAtual >= 0 && segmentos[segAtual].nome == NULL){
+                segmentos[segAtual].duracao++;
+            } else {
+                //cria novo segmento idle
+                segAtual++;
+                segmentos[segAtual].nome = NULL;
+                segmentos[segAtual].duracao = 1;
+                segmentos[segAtual].motivo = 0;
+                tarefaAtual = -1;
+            }
         }
     }
 
