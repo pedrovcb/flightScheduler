@@ -1,0 +1,344 @@
+Script iniciado em 2026-09-09 17:05:39-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="167" LINES="38"]
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -O2 -c -o src/base.o src/base.c
+gcc -Wall -Wextra -O2 -o scheduler src/base.o
+/usr/bin/ld: /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o: na função "_start":
+(.text+0x1b): referência não definida para "main"
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:13: scheduler] Error 1
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m ^C[?2004l[?2004h[?2004l
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m make clean
+[?2004lrm -f src/base.o src/main.o scheduler *.out
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m g[K[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -O2 -c -o src/base.o src/base.c
+gcc -Wall -Wextra -O2 -c -o src/main.o src/main.c
+gcc -Wall -Wextra -O2 -o scheduler src/base.o src/main.o
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./schel[Kduler rate voo.txt
+[?2004lErro: arquivo 'voo.txt' falhou em ser aberto!
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m ./scheduler
+[?2004lUso: ./scheduler <rate|edf> <arquivo>
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m ./sced[K[Kheduler foo voo.txt
+[?2004lErro: algoritmo 'foo' desconhecido (use rate ou edf)!
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m ./scheduler slaoq voo.txt
+[?2004lErro: algoritmo 'slaoq' desconhecido (use rate ou edf)!
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m✗[0m ./scheduler slaoq voo.txt[2Pfoo[C[C[C[C[C[C[C[C[K rate voo.txt
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make clean
+[?2004lrm -f src/base.o src/main.o scheduler *.out
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -O2 -c -o src/base.o src/base.c
+gcc -Wall -Wextra -O2 -c -o src/main.o src/main.c
+gcc -Wall -Wextra -O2 -o scheduler src/base.o src/main.o
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./ sce[K[K[K[Kscheduler rate exemplopvcb.txt
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./scheduler rate exemplopvcb.txt[C[1P[1P[1P[1P[1@e[1@d[1@f
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./scheduler edf exemplopvcb.txt[1@rate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K clean[K[K[K[K[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./scheduler rate.t[K[K voo.txt
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./scheduler rate voo.txt[1P[1P[1P[1P[1@e[1@d[1@f
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m git [K[K[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make clean
+[?2004lrm -f src/base.o src/main.o scheduler *.out
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -O2 -c -o src/base.o src/base.c
+gcc -Wall -Wextra -O2 -c -o src/main.o src/main.c
+gcc -Wall -Wextra -O2 -c -o src/prioridade.o src/prioridade.c
+gcc -Wall -Wextra -O2 -o scheduler src/base.o src/main.o src/prioridade.o
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make clean
+[?2004lrm -f src/base.o src/main.o src/prioridade.o scheduler *.out
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -O2 -c -o src/base.o src/base.c
+gcc -Wall -Wextra -O2 -c -o src/main.o src/main.c
+gcc -Wall -Wextra -O2 -c -o src/prioridade.o src/prioridade.c
+gcc -Wall -Wextra -O2 -c -o src/scheduler.o src/scheduler.c
+gcc -Wall -Wextra -O2 -o scheduler src/base.o src/main.o src/prioridade.o src/scheduler.o
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./sche[K[K[K[K[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make clean[K clean./scheduler edf voo.txt[1P[1P[1P[1@r[1@a[1@t[1@e
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m cay [K[Kt rate_pvcb.out
+[?2004lEXECUTION BY RATE
+[ATT] for 8 units - F
+[NAV] for 12 units - H
+[ATT] for 8 units - F
+[NAV] for 2 units - L
+[ATT] for 8 units - F
+idle for 0 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 0 units
+[ATT] for 8 units - F
+idle for 0 units
+
+LOST DEADLINES
+[ATT] 0
+[NAV] 1
+
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 1
+
+KILLED
+[ATT] 0
+[NAV] 0
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ake cl[K[K[K[K[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make[K[K[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ake clean
+[?2004lbash: command not found: ake
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m m[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [Ca[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [C[Cke clean
+[?2004lrm -f src/base.o src/main.o src/prioridade.o src/scheduler.o scheduler *.out
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m m[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [Ca[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cke
+[?2004lgcc -Wall -Wextra -O2 -c -o src/base.o src/base.c
+gcc -Wall -Wextra -O2 -c -o src/main.o src/main.c
+gcc -Wall -Wextra -O2 -c -o src/prioridade.o src/prioridade.c
+gcc -Wall -Wextra -O2 -c -o src/scheduler.o src/scheduler.c
+gcc -Wall -Wextra -O2 -o scheduler src/base.o src/main.o src/prioridade.o src/scheduler.o
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m make clean[1P[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [C[C[C[C[C[C[C[C[Ccat rate_pvcb.out[7@./scheduler rate voo.tx[C
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m ./scheduler rate voo.txtmake[K clean[1P[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [C[C[C[C[C[C[C[C[Ccat rate_pvcb.out
+[?2004lEXECUTION BY RATE
+[ATT] for 8 units - F
+[NAV] for 12 units - H
+[ATT] for 8 units - F
+[NAV] for 2 units - L
+[ATT] for 8 units - F
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+[ATT] for 8 units - F
+
+LOST DEADLINES
+[ATT] 0
+[NAV] 1
+
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 1
+
+KILLED
+[ATT] 0
+[NAV] 0
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m m[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [Ca[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cke clean
+[?2004lrm -f src/base.o src/main.o src/prioridade.o src/scheduler.o scheduler *.out
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m m[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [Ca[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cke
+[?2004lgcc -Wall -Wextra -O2 -c -o src/base.o src/base.c
+gcc -Wall -Wextra -O2 -c -o src/main.o src/main.c
+gcc -Wall -Wextra -O2 -c -o src/prioridade.o src/prioridade.c
+gcc -Wall -Wextra -O2 -c -o src/scheduler.o src/scheduler.c
+gcc -Wall -Wextra -O2 -o scheduler src/base.o src/main.o src/prioridade.o src/scheduler.o
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m make cleancat rate_pvcb.out[7@./scheduler rate voo.tx[C
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m ./scheduler rate voo.txtmake[K cleancat rate_pvcb.out
+[?2004lEXECUTION BY RATE
+[ATT] for 8 units - F
+[NAV] for 12 units - H
+[ATT] for 8 units - F
+[NAV] for 2 units - L
+idle for 10 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+
+LOST DEADLINES
+[ATT] 0
+[NAV] 1
+
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 1
+
+KILLED
+[ATT] 0
+[NAV] 0
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m T[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [CA[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [C[C IGUAL MDS AMEM[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [C[C[K[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [C[K[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m F[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [CI[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m❯[0m [C[CCOU IGUAL FINALMENTE MDS MD[K[KAMEM
+[?2004lbash: command not found: FICOU
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m ([1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [Cm[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [C[Ce exaltei perdão[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [C[C[K[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [C[K[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m m[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [Ca[1;36mflightScheduler[0m [3;36mmain[0m [36m ? [1m✗[0m [C[Cke clean
+[?2004lrm -f src/base.o src/main.o src/prioridade.o src/scheduler.o scheduler *.out
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -O2 -c -o src/base.o src/base.c
+gcc -Wall -Wextra -O2 -c -o src/main.o src/main.c
+gcc -Wall -Wextra -O2 -c -o src/prioridade.o src/prioridade.c
+gcc -Wall -Wextra -O2 -c -o src/scheduler.o src/scheduler.c
+gcc -Wall -Wextra -O2 -o scheduler src/base.o src/main.o src/prioridade.o src/scheduler.o
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m .sche[K[K[K[K/scheduler edf voo.txt
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m cat edf_pvcb.p[Kout
+[?2004lEXECUTION BY EDF
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+
+LOST DEADLINES
+[ATT] 0
+[NAV] 0
+
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 2
+
+KILLED
+[ATT] 0
+[NAV] 0
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ra[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./scheduler rate voo.txt
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m cat rate_pvcb.out
+[?2004lEXECUTION BY RATE
+[ATT] for 8 units - F
+[NAV] for 12 units - H
+[ATT] for 8 units - F
+[NAV] for 2 units - L
+idle for 10 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+
+LOST DEADLINES
+[ATT] 0
+[NAV] 1
+
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 1
+
+KILLED
+[ATT] 0
+[NAV] 0
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m cat rate_pvcb.out[7@./scheduler rate voo.tx[C[7Pcat rate_pvcb.ou[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./scheduler rate voo.txtmake[K./scheduler rate voo.txt[1P[1P[1P[1@e[1@x[1@e[1@m[1@p[1@l[1@o[1@p[1@v[1@c[1@b
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./scheduler rate exemplopvcb.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pcat rate_pvcb.ou[C
+[?2004lEXECUTION BY RATE
+[A] for 5 units - F
+idle for 5 units
+[A] for 5 units - F
+[B] for 1 units - L
+idle for 4 units
+
+LOST DEADLINES
+[A] 0
+[B] 2
+
+COMPLETE EXECUTION
+[A] 2
+[B] 0
+
+KILLED
+[A] 0
+[B] 0
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./scheduler edf exemplopvcbb[K.txt
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m cat edf_pvcb.put[K[K[Kout
+[?2004lEXECUTION BY EDF
+[B] for 4 units - F
+[A] for 5 units - F
+idle for 1 units
+[A] for 2 units - H
+[B] for 4 units - F
+[A] for 3 units - F
+idle for 1 units
+
+LOST DEADLINES
+[A] 0
+[B] 0
+
+COMPLETE EXECUTION
+[A] 2
+[B] 2
+
+KILLED
+[A] 0
+[B] 0
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./scheduler edf voo.txt
+[?2004l]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m cat[K[K[K[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make clean
+[?2004lrm -f src/base.o src/main.o src/prioridade.o src/scheduler.o scheduler *.out
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m 
+Script concluído em 2026-09-09 18:33:22-03:00 [COMMAND_EXIT_CODE="0"]
+Script iniciado em 2026-09-09 18:50:56-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="167" LINES="38"]
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -O2 -c -o src/base.o src/base.c
+gcc -Wall -Wextra -O2 -c -o src/main.o src/main.c
+gcc -Wall -Wextra -O2 -c -o src/prioridade.o src/prioridade.c
+gcc -Wall -Wextra -O2 -c -o src/scheduler.o src/scheduler.c
+gcc -Wall -Wextra -O2 -o scheduler src/base.o src/main.o src/prioridade.o src/scheduler.o
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m ./runtests[K[K[K[K[K_tests.sh
+[?2004l=== Happy path: rate voo.txt ===
+PASS: rate voo.txt == esperado
+
+=== Happy path: edf voo.txt ===
+PASS: edf voo.txt == esperado
+
+=== Happy path: rate exemplopvcb.txt ===
+PASS: rate exemplopvcb.txt tem B perdendo
+
+=== Happy path: edf exemplopvcb.txt ===
+PASS: edf exemplopvcb.txt sem perdas
+
+=== Casos de erro ===
+PASS: sem argumentos → exit 1
+PASS: algoritmo inválido → exit 1
+PASS: arquivo inexistente → exit 1
+PASS: tempoTotal não numérico → exit 1
+PASS: campo faltando (só 2 campos) → exit 1
+PASS: deadline = 0 (não positivo) → exit 1
+PASS: C > D (burst > deadline) → exit 1
+PASS: D > P (deadline > periodo) → exit 1
+
+=== Resumo ===
+Passou: 12 / 12
+Falhou: 0 / 12
+Todos os testes passaram!
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m make clean
+[?2004lrm -f src/base.o src/main.o src/prioridade.o src/scheduler.o scheduler *.out
+]0;pedrovcb@vcbpe:~/Documentos/flightScheduler[?2004h
+[1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mflightScheduler[0m [3;36mmain[0m [36m? [1m❯[0m 
+Script concluído em 2026-09-09 18:51:30-03:00 [COMMAND_EXIT_CODE="0"]
