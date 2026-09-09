@@ -35,13 +35,15 @@ int main(int argc, char **argv){
         estados[i].restante = 0;
     }
 
-    //motor de simulação (placeholder)
+    //executa a simulação
     Segmento segmentos[MAX_SEGMENTOS];
     int numSegmentos = 0;
 
-    //executaSimulacao tbm placeholder pra dps
-    //por enquanto só valida o parse e gera saída vazia
+    if(executaSimulacao(argv[1], tarefas, estados, numTarefas, tempoTotal, segmentos, &numSegmentos) != 0){
+        return 1;
+    }
 
+    //escreve a saída
     escritaSaida(argv[1], tarefas, estados, numTarefas, segmentos, numSegmentos);
 
     return 0;
