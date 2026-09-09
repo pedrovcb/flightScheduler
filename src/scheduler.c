@@ -23,7 +23,6 @@ int executaSimulacao(const char *algoritmo, const Tarefa *tarefas, EstadoTarefa 
                 estados[i].numPerdidas++;
                 estados[i].ativa = 0;
                 estados[i].restante = 0;
-                //se essa tarefa estava executando, fecha segmento com L
                 if(i == tarefaAtual){
                     if(segAtual >= 0){
                         segmentos[segAtual].motivo = 'L';
@@ -38,16 +37,14 @@ int executaSimulacao(const char *algoritmo, const Tarefa *tarefas, EstadoTarefa 
 
         //Passo 4: gerenciar segmento
         if(proximo != tarefaAtual){
-            //fecha segmento anterior
             if(segAtual >= 0){
-                if(tarefaAtual >= 0 && segmentos[segAtual].motivo == 0){
-                    //tarefa ainda ativa e sem motivo = preemptada
+                //mudança: descarta segmentos vazios pra nao gerar idle for 0 units
+                if(segmentos[segAtual].duracao == 0){
+                    segAtual--;
+                } else if(tarefaAtual >= 0 && segmentos[segAtual].motivo == 0){
                     segmentos[segAtual].motivo = 'H';
                 }
-                //se motivo já foi setado (L ou F), não sobrescreve
-                //se idle (tarefaAtual == -1), não tem letra
             }
-            //inicia novo segmento
             segAtual++;
             segmentos[segAtual].duracao = 0;
             segmentos[segAtual].motivo = 0;
@@ -64,8 +61,8 @@ int executaSimulacao(const char *algoritmo, const Tarefa *tarefas, EstadoTarefa 
             estados[tarefaAtual].restante--;
             segmentos[segAtual].duracao++;
 
-            if(estados[tarefaAtual].restante == 0){
-                //terminou a execução
+            //mudança: só seta F se motivo ainda nao tiver sido definido (evita sobrescrever L)
+            if(estados[tarefaAtual].restante == 0 && segmentos[segAtual].motivo == 0){
                 estados[tarefaAtual].numCompletas++;
                 estados[tarefaAtual].ativa = 0;
                 segmentos[segAtual].motivo = 'F';
@@ -77,6 +74,10 @@ int executaSimulacao(const char *algoritmo, const Tarefa *tarefas, EstadoTarefa 
     if(segAtual >= 0){
         if(tarefaAtual >= 0 && segmentos[segAtual].motivo == 0){
             segmentos[segAtual].motivo = 'H';
+        }
+        //mudança: descarta ultimo segmento vazio
+        if(segmentos[segAtual].duracao == 0){
+            segAtual--;
         }
     }
 
